@@ -1,0 +1,70 @@
+\documentclass[12pt,letterpaper,spanish]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{center}
+{\huge {\rm {\em Esquema XML}}} \\
+\vspace{5mm}
+{\Large Alejandro Hern\'andez Hern\'andez}\\
+\end{center}
+\vspace{5mm}
+
+El documento {\em XML} visto en clase, la carta, tiene le siguiente formato: 
+\begin{verbatim}
+
+<?xml version="1.0"?>
+<!DOCTYPE carta SYSTEM "carta.dtd">
+<carta>
+ <contacto tipo="remitente">
+  <nombre>Alejandro Hernandez</nombre>
+  <direccion1>Vicente Guerrero #1135</direccion1>
+  <direccion2>Av. Juarez No. 235</direccion2>
+  <ciudad>CDMX</ciudad>
+  <estado>CDMX</estado>
+  <cp>07324</cp>
+  <telefono>5523146598</telefono>
+  <bandera genero="M"/>
+ </contacto>
+
+ <saludo>Estimado amigo</saludo>
+ <parrafo>la wea shidori de game alv :v</parrafo>
+ <parrafo>alguna frase de naruto (de relleno pues :v)</parrafo>
+ <cierre>grax men por leer esto xD</cierre>
+ <firma>yo merengues</firma>
+</carta>
+
+\end{verbatim}
+\vspace{1mm}
+\small{\em{nota: lo importante es la estructura y elementos, no el contenido entre los elementos}}
+\newpage
+Entonces, podemos definir nuestro {\em XML Schema} como:
+ 
+\begin{verbatim}
+
+<?xml version="1.0"?>
+<schema xmlns: "http://www.w3.org/2001/XMLSchema">
+<element name "carta">
+<complexType name="contacto">
+ <sequence>
+  <element name="nombre" type="string>
+  <element name="direccion1" type="string">
+  <element name="direccion2" type="string">
+  <element name="ciudad" type="string">
+  <element name="estado" type="string">
+  <element name="cp" type="int">
+  <element name="telefono" type="long">
+ </sequence>
+ <element name="saludo" type="string">
+ <element name="parrafo" type="string">
+ <element name="cierre" type="string">
+ <element name="firma" type="string">
+</complexType>
+</schema>
+
+\end{verbatim}
+
+%termina documento
+\end{document}
