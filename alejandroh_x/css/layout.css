@@ -1,0 +1,109 @@
+
+h1{
+  font-size: 40px;
+  font-family: Times New Roman;
+  font-weight: bold;
+  text-align: center;
+}
+/**/
+.pers{
+heigth: 22px;
+padding: 15px;
+}
+
+.pers ul{
+width:100%;
+
+}
+
+.pers li{
+float:left;
+list-style-type:none;
+display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+
+}
+
+
+.pers a{
+ font-family: Arial;
+ margin: 0 2px;
+ width: 100px;
+ height: 40px;
+ display: inline-flex;
+ /*border: 1px solid gray;*/
+ text-decoration: none;
+ color:#000;
+}
+
+.pers a:visited{
+ color: rgb(204,102,204);
+ background-color: rgb(221,221,221);
+}
+
+
+
+.pers a:active{
+ background-color: gray;
+ color:#fff;
+}
+
+.pers a:hover{
+background-color: rgb(100,50,300);
+}
+
+/*aqui la parte de la nevrgacion*/
+
+.nave{
+float: center;
+/*max-width: 300px;*/
+color: #000000;
+border: 1px #adc341;
+background-color: rgb(200,200,200);
+}
+
+.ini{
+padding: 2px;
+
+/*padding-bottom: 2px;*/
+float:center;
+background-color: rgb(200,300,200);
+
+}
+
+.vacio{
+float: left;
+max-width: 80px;
+}
+
+p{
+margin: 5px;
+text-align: left;
+
+}
+
+h2{
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h3{
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: normal;
+  text-align: center;
+}
+
+h4{
+  font-size: 12;
+  font-family: serif;
+  font-weight: normal;
+}
+
+.tex{
+  margin-left: 20px;
+  margin-top: 1px;
+}
