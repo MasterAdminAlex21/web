@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+<head><title>Calculo de area y perimetos</title>
+<script type="text/javascript" src="js/jquery.js"/>
+<script type="text/javascript" src="js/calcquery.js"/>
+</head>
+
+<body>
+ <div class="cab">
+  <h1>Calculo de areas y perimetros</h1>
+ </div>
+  <div class="titl"><h4>Por favor ingrese los datos para realizar el calculo:</h4></div>
+ <div class="contenedor">
+<p id="t1"><div id="dato1">dato 1</div>	<input type="text" id="d1"/><br/><br/></p>
+<p id="t2"><div id="dato2">dato 2</div> <input type="text" id="d2"/><br/><br/></p>
+<p id="t3"><div id="dato3">dato 3</div> <input type="tect" id="d3"/><br/><br/></p>
+
+<div id="res" class="res"></div>
+
+<input type="radio" id="area" name="calculo" checked="checked" />area
+<input type="radio" id="perimetro" name="calculo"/>perimetro
+<input type="radio" id="volumen" name="calculo" />volumen<br/><br/>
+<select id="selarea">
+	<option value="cuadra">cuadrado</option>
+	<option value="rect">rectangulo</option>
+	<option value="triang">triangulo</option>
+	<option value="circ">circulo</option>
+	<option value="trap">trapecio</option>
+	<option value="rom">rombo</option>
+	<option value="elip">elipse</option>
+	<option value="pent">pentagono</option>
+</select>
+<select id="selperim">
+	<option value="cuadrap">cuadrado</option>
+	<option value="rectp">rectangulo</option>
+	<option value="triangEp">triangulo equilatero</option>
+	<option value="triangIp">triangulo isosceles</option>
+	<option value="circp">circulo</option>
+	<option value="trapp">trapecio</option>
+	<option value="romp">rombo</option>
+	<option value="pentp">pentagono</option>
+</select>
+<select id="selvolumen">
+	<option value="esf">esfera</option>
+	<option value="cubo">cubo</option>
+	<option value="cono">cono</option>
+	<option value="pira">piramide cuadrangular</option>
+	<option value="cil">cilindro</option>
+</select>
+<br/><br/>
+<button id="bt1">calcular</button><!--
+<button id="bt2">calcular perimetro</button>
+<button id="bt3">calcular volumen</button>-->
+</div>
+<!--<script type="text/javascript" src="calcu.js"></script>-->
+
+</body>
+</html>

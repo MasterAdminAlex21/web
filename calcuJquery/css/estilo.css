@@ -1,0 +1,39 @@
+.cab{
+	height: 10%;
+	background-color: #ac23de;
+	text-align: center;
+	margin: 1px;
+	padding: 1px;
+	text-shadow: 2px 3px 2px green;
+	font-style: oblique;
+	font-size: 150%;
+}
+
+.contenedor{
+	width: 60%;
+	height: 50%;
+	margin-left: 15%;
+	background-color: #acc231;
+	padding: 5%;
+}
+
+.titl{
+	width: 70%;
+	height: 10%;
+	margin-left: 15%;
+	background-color: #a23c12;
+	text-align: center;
+	padding-top: 1%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	font-size: 120%;
+}
+
+.res{
+	width: 40%;
+	height: 10%;
+	margin-left: 7%;
+	background-color: #00ff00;
+	text-align: center;
+	float: right;
+}
